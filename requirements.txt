@@ -1,0 +1,40 @@
+# ============================================================
+# REQUIREMENTS — Ride Fare Price Prediction ML System
+# ============================================================
+
+# API
+fastapi
+uvicorn
+
+# Data
+pandas==2.1.4
+numpy==1.26.4
+
+# ML core
+scikit-learn==1.3.2
+
+# Boosting models
+xgboost
+lightgbm
+catboost
+
+# Serialization
+joblib
+
+# Explainability
+shap
+
+# Experiment tracking
+mlflow
+
+# Visualization
+matplotlib
+seaborn
+
+# Dashboard
+streamlit
+requests
+
+# Testing
+pytest
+pytest-cov

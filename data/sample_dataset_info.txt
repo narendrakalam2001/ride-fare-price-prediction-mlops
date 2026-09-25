@@ -1,0 +1,28 @@
+Ride Fare Price Prediction
+Kaggle - NYC Taxi Fare Prediction
+======================================================================
+
+Original rows: 55,423,856
+Valid rows: 55,423,856
+Invalid target rows: 0
+Sample rows: 100,000
+Sample columns: 8
+
+Target:
+fare_amount = Taxi fare amount in USD
+
+Problem type:
+Regression
+
+Sampling method:
+Chunked stratified sampling based on fare_amount quantile ranges.
+
+Original Kaggle evaluation metric:
+RMSE (Root Mean Squared Error)
+
+Recommended project metrics:
+RMSE, MAE, R2
+
+Important:
+The original Kaggle dataset contains approximately 55 million training rows.
+The sample dataset is created for local development, EDA, experimentation and GitHub project demonstration.

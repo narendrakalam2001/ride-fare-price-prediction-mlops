@@ -1,0 +1,82 @@
+# ============================================================
+# .GITIGNORE — Health Insurance Cross-Sell ML System
+# Rebuilt for Render + Streamlit Cloud deployment:
+#   - Sample dataset in data/  → PUSHED (needed for portfolio + quick test)
+#   - Model artifacts in crosssell_models/  → PUSHED (needed for Render
+#     to load the champion model at startup, and for the dashboard to
+#     show KPIs/PSI/challenger history without retraining)
+#   - The large .joblib model file is pushed via GIT LFS, not ignored
+#     here — see .gitattributes. Plain .gitignore cannot selectively
+#     "large-file-handle" something; LFS is the mechanism for that.
+# ============================================================
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environments ──────────────────────────────────────
+venv/
+env/
+.venv/
+.env
+*.env
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Real full dataset — NEVER push (300+ MB, download from Kaggle yourself) ──
+# The sample dataset below is intentionally NOT listed here, so it IS pushed.
+data/health_insurance_train_real.csv
+data/train.csv
+data/*.zip
+# Explicit keep, in case a broader rule above ever shadows it:
+!data/sample_health_insurance_cross_sell_dataset.csv
+!data/sample_dataset_info.txt
+
+# ── Model artifacts ──────────────────────────────────────────
+# crosssell_models/ is INTENTIONALLY NOT ignored — Render loads the
+# champion .joblib at API startup, and the dashboard reads
+# latest_model.json, challenger_log.json, model_card_*.json,
+# model_experiment_results.csv, feature_drift_report.csv, and
+# monitor_scores.csv directly from this folder. All of these must be
+# pushed for both deployments to work.
+#
+# The .joblib file itself (~350 MB) is tracked with Git LFS instead of
+# being ignored — see .gitattributes. Do not add a "*.joblib" line here;
+# that would remove it from the repo entirely and break Render.
+
+# ── Logs ──────────────────────────────────────────────────────
+logs/*
+!logs/prediction_logs.csv
+!logs/.gitkeep
+*.log
+
+# ── MLflow ────────────────────────────────────────────────────
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ── CatBoost training scratch files ───────────────────────────
+catboost_info/
+
+# ── Pytest / coverage ─────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+

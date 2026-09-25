@@ -1,0 +1,124 @@
+[
+  {
+    "decision": "PROMOTED",
+    "reason": "No existing champion \u2014 first model auto-promoted",
+    "challenger_name": "NeuralNet",
+    "challenger_rmse": 3.5624,
+    "challenger_r2": 0.9647,
+    "champion_name": null,
+    "champion_rmse": null,
+    "evaluated_at": "2026-09-13 06:16:37"
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: RMSE improvement -8.62% < 2.0%",
+    "evaluated_at": "2026-09-16 17:23:56",
+    "challenger_name": "LightGBM",
+    "challenger_rmse": 3.8694,
+    "challenger_r2": 0.8375,
+    "challenger_gap": 0.0227,
+    "champion_name": "NeuralNet",
+    "champion_rmse": 3.5624,
+    "champion_r2": 0.9647,
+    "gates": {
+      "rmse_improvement_passed": false,
+      "r2_floor_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: RMSE improvement -9.05% < 2.0%",
+    "evaluated_at": "2026-09-19 20:38:02",
+    "challenger_name": "LightGBM",
+    "challenger_rmse": 3.885,
+    "challenger_r2": 0.8339,
+    "challenger_gap": 0.0212,
+    "champion_name": "NeuralNet",
+    "champion_rmse": 3.5624,
+    "champion_r2": 0.9647,
+    "gates": {
+      "rmse_improvement_passed": false,
+      "r2_floor_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "PROMOTED",
+    "reason": "No existing champion \u2014 first model auto-promoted",
+    "challenger_name": "LightGBM",
+    "challenger_rmse": 3.885,
+    "challenger_r2": 0.8339,
+    "champion_name": null,
+    "champion_rmse": null,
+    "evaluated_at": "2026-09-20 11:19:55"
+  },
+  {
+    "decision": "PROMOTED",
+    "reason": "Challenger beats champion: RMSE 3.8850 \u2192 3.8015 (+2.15%)",
+    "evaluated_at": "2026-09-20 16:12:39",
+    "challenger_name": "LightGBM",
+    "challenger_rmse": 3.8015,
+    "challenger_r2": 0.8419,
+    "challenger_gap": 0.0044,
+    "champion_name": "LightGBM",
+    "champion_rmse": 3.885,
+    "champion_r2": 0.8339,
+    "gates": {
+      "rmse_improvement_passed": true,
+      "r2_floor_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: RMSE improvement -0.14% < 2.0%",
+    "evaluated_at": "2026-09-20 19:42:44",
+    "challenger_name": "LightGBM",
+    "challenger_rmse": 3.8067,
+    "challenger_r2": 0.8419,
+    "challenger_gap": 0.0039,
+    "champion_name": "LightGBM",
+    "champion_rmse": 3.8015,
+    "champion_r2": 0.8419,
+    "gates": {
+      "rmse_improvement_passed": false,
+      "r2_floor_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: RMSE improvement -0.14% < 2.0%",
+    "evaluated_at": "2026-09-24 15:56:49",
+    "challenger_name": "LightGBM",
+    "challenger_rmse": 3.8067,
+    "challenger_r2": 0.8419,
+    "challenger_gap": 0.0039,
+    "champion_name": "LightGBM",
+    "champion_rmse": 3.8015,
+    "champion_r2": 0.8419,
+    "gates": {
+      "rmse_improvement_passed": false,
+      "r2_floor_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: RMSE improvement -0.14% < 2.0%",
+    "evaluated_at": "2026-09-24 17:15:12",
+    "challenger_name": "LightGBM",
+    "challenger_rmse": 3.8067,
+    "challenger_r2": 0.8419,
+    "challenger_gap": 0.0039,
+    "champion_name": "LightGBM",
+    "champion_rmse": 3.8015,
+    "champion_r2": 0.8419,
+    "gates": {
+      "rmse_improvement_passed": false,
+      "r2_floor_passed": true,
+      "gap_passed": true
+    }
+  }
+]

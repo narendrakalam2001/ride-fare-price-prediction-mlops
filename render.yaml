@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ride-fare-price-prediction-mlops
+    runtime: python
+    buildCommand: pip install -r requirements_api.txt
+    startCommand: uvicorn serving.fare_api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13

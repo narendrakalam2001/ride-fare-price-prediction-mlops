@@ -1,0 +1,15 @@
+feature,drift_score
+pickup_longitude,4.05982633197309e-06
+pickup_latitude,3.1826938610593123e-06
+pickup_month,2.4140186399393685e-06
+pickup_dist_from_center_km,2.337722701526124e-06
+manhattan_distance_km,1.8894252371901198e-06
+pickup_hour,1.8622770676661748e-06
+bearing_deg,1.6997058622517997e-06
+trip_distance_km,1.6651190983650295e-06
+hour_sin,1.6059866598065072e-06
+dropoff_latitude,1.5102700326250416e-06
+distance_per_passenger,1.1641700743047477e-06
+dropoff_longitude,1.05868630272824e-06
+hour_cos,7.550248207397831e-07
+distance_x_rush_hour,1.6316625027870296e-07

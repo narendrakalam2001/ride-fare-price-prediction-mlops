@@ -1,0 +1,10 @@
+# ============================================================
+# REQUIREMENTS — Dashboard deployment only (Streamlit Cloud)
+# ============================================================
+
+streamlit
+pandas==2.1.4
+numpy==1.26.4
+matplotlib
+seaborn
+requests
