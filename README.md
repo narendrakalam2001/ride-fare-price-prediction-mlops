@@ -58,7 +58,7 @@ Real results from the final production-scale training run — LightGBM refit on 
 |---|---|
 | 🚀 **FastAPI (Swagger UI)** | [https://ride-fare-price-prediction-mlops.onrender.com/docs](https://ride-fare-price-prediction-mlops.onrender.com/docs) |
 | 📊 **Monitoring Dashboard** | [https://ride-fare-price-prediction-mlops.streamlit.app](https://ride-fare-price-prediction-mlops.streamlit.app) |
-| 📓 **EDA Notebook** | [notebooks/ride_fare_price_prediction_eda.ipynb](notebooks/ride_fare_price_prediction_eda.ipynb) · [HTML export](notebooks/ride_fare_price_prediction_eda.html) |
+| 📓 **EDA Notebook** | [notebooks/ride_fare_price_prediction_eda.ipynb](notebooks/ride_fare_price_prediction_eda.ipynb) |
 
 > ⚠️ Render free tier: first request may take 30–60 seconds (cold start).
 
