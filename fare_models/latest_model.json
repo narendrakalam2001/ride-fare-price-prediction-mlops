@@ -1,5 +1,5 @@
 {
-  "model_name": "fare_model_LightGBM_v1_20260920_161102.joblib",
-  "model_card_path": "fare_models\\model_card_LightGBM_v1_20260920_161102.json",
+  "model_name": "fare_model_LightGBM_v1_20260924_171109.joblib",
+  "model_card_path": "fare_models/model_card_LightGBM_v1_20260924_171109.json",
   "calibration_name": "calibration_LightGBM_v1.joblib"
 }

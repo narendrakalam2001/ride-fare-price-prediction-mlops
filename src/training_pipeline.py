@@ -37,7 +37,7 @@ warnings.filterwarnings("ignore", message='Field "model_name" has conflict with 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
-DATA_PATH = r"D:\Data Science Datasets\new-york-city-taxi-fare-prediction\train.csv"
+DATA_PATH = r"D:\Data Science Datasets\new-york-city-taxi-fare-prediction"
 
 
 # ============================================================
@@ -260,6 +260,18 @@ def _finalize_selected_model(
     """
     y_pred_test = selected_pipe.predict(X_test)
 
+    # Generated once here and reused for the model, card, AND calibration
+    # filenames below — previously calibration used a fixed, unversioned
+    # name (calibration_{model}_v1.joblib), so a REJECTED challenger's
+    # calibration would silently overwrite the file the current PROMOTED
+    # champion depends on (different runs of even the same model type can
+    # have meaningfully different residual/calibration behavior). Giving
+    # every run's calibration file its own timestamp — matching the model
+    # and card files — means only a run that's actually promoted has its
+    # calibration referenced by the registry, and it can never be
+    # clobbered by an unrelated rejected run.
+    run_ts = time.strftime("%Y%m%d_%H%M%S")
+
     test_metrics = {
         "test_rmse":        rmse(y_test, y_pred_test),
         "test_mae":         mae(y_test, y_pred_test),
@@ -318,7 +330,7 @@ def _finalize_selected_model(
     calibration = calibrate_with_holdout(selected_pipe, X_cal, y_cal)
     calibration_path = ""
     if calibration is not None:
-        calibration_path = os.path.join(MODEL_DIR, f"calibration_{selected_name}_v1.joblib")
+        calibration_path = os.path.join(MODEL_DIR, f"calibration_{selected_name}_v1_{run_ts}.joblib")
         joblib.dump(calibration, calibration_path)
 
     # ─────────────────────────────────────────────────────────
@@ -432,7 +444,6 @@ def _finalize_selected_model(
         shap_dict        = shap_result.get("shap_top", {}) if shap_result is not None else None,
     )
 
-    run_ts    = time.strftime("%Y%m%d_%H%M%S")
     card_path = save_model_card(model_card, MODEL_DIR, selected_name, version=f"v1_{run_ts}")
 
     # ─────────────────────────────────────────────────────────
