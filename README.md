@@ -14,7 +14,7 @@
 > **Domain:** Mobility / Ride-Hailing
 > **Problem:** Regression — predict continuous fare amount ($) for a single trip from pickup/dropoff coordinates and time
 > **Dataset:** [NYC Taxi Fare Prediction (Kaggle)](https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction) — 55,423,856 rows · pickup/dropoff GPS · passenger count · timestamp
-> **Industry Context:** Uber · Ola · Rapido — fare prediction models power dynamic pricing, surge calculation, and driver payout estimation in production ride-hailing platforms
+> **Industry Context:** Ride-hailing platforms — fare prediction models power dynamic pricing, surge calculation, and driver payout estimation
 
 ---
 
@@ -632,11 +632,11 @@ Result: 42 passed · 0 failed
 
 **Narendra Kalam** — MSc Computer Science (Gold Medalist — NASSCOM, Full Stack Data Science + AI)
 
-> Building 20+ industry-level, end-to-end ML systems across all domains.
+> Building 30+ industry-level, end-to-end ML systems across all domains.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/narendra-kalam/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/narendra-kalam)
 [![Kaggle](https://img.shields.io/badge/Kaggle-Profile-20BEFF?logo=kaggle)](https://www.kaggle.com/narendrakalam)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?logo=github)](https://narendrakalam2001.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?logo=github)](https://narendrakalam2001.github.io)
 [![Email](https://img.shields.io/badge/Email-Contact-red?logo=gmail)](mailto:kalamnarendra2001@gmail.com)
 
 ### Portfolio Projects
@@ -668,6 +668,12 @@ Result: 42 passed · 0 failed
 | 23 | Insurance Premium Prediction | Insurance / Actuarial ML | RandomForest | RMSLE = 1.1586 · 1.2M real policies |
 | 24 | Health Insurance Cross-Sell | Insurance / BFSI | ExtraTrees | ROC-AUC = 0.8404 · 67.8% calls saved |
 | 25 | **Ride Fare Price Prediction** | **Mobility / Ride-Hailing** | **LightGBM** | **RMSE = $3.81 · R² = 0.8419 · 55M rows** |
+| 26 | E-Commerce BI & SQL Analytics | Retail Analytics / BI | SQL + FastAPI + Streamlit | 40 tests passing · 100K orders |
+| 27 | AgriSense AI | AgriTech | EfficientNetB3 | Accuracy = 98.44% · Macro-F1 = 0.9843 · 38 classes |
+| 28 | AI Loan Underwriting Platform | BFSI / Fintech | XGBoost (credit + fraud) | Credit ROC-AUC = 0.858 · Fraud ROC-AUC = 0.955 · 242 tests |
+| 29 | CineMatch Pro | Entertainment / Media Tech | Hybrid SVD + TF-IDF + SBERT · CLIP · RoBERTa | RMSE = 0.8005 · Sentiment Acc = 94.26% · 56K posters |
+| 30 | DriveGuard AI | Computer Vision / Smart Cities | YOLOv8m + DeepSORT + Gemini RAG | mAP@0.5 = 0.680 · 31 API routes · 364 tests |
+| 31 | MathVision AI | EdTech / Computer Vision | TrOCR-large + SymPy | CER = 0.138 · 350/350 symbolic solved |
 
 ---
 
